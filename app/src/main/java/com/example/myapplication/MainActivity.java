@@ -151,6 +151,9 @@ public class MainActivity extends AppCompatActivity {
     private void setupClickListeners() {
         btnSettings.setOnClickListener(v -> showSettingsDialog());
         btnGoals.setOnClickListener(v -> showGoalsDialog());
+        findViewById(R.id.fabChatbot).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, PetChatActivity.class));
+        });
         btnGame.setOnClickListener(v -> {
             int currentFuel = fuelPrefs.getInt("totalFuel", 0);
             if (currentFuel > 0) {

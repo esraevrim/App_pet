@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature
         android:name="android.hardware.sensor.stepcounter"
@@ -23,6 +24,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".PetChatActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".GameView"
             android:exported="false" />
@@ -51,7 +56,6 @@
             android:name=".MiniGameActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ScoreActivity"
             android:exported="false"

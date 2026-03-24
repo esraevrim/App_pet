@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_message.xml -->
+<!-- VIEW TYPE'a göre bot (sol) ve kullanıcı (sağ) balonlarını aynı dosyadan
+     yönetebilirsin; Adapter'da görünürlüğü değiştir. -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <!-- ── BOT MESAJI (sol) ─────────────────────────────────── -->
+    <LinearLayout
+        android:id="@+id/layoutBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!-- Küçük avatar -->
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="6dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/circle_avatar_bg"
+            android:contentDescription="Bot"
+            android:padding="3dp"
+            android:src="@drawable/pet_green" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvBotMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bubble_bot_bg"
+                android:fontFamily="@font/nunito_regular"
+                android:lineSpacingExtra="2dp"
+                android:maxWidth="260dp"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#5C3D2E"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvBotTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/nunito_regular"
+                android:textColor="#C4A99A"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ── KULLANICI MESAJI (sağ) ──────────────────────────── -->
+    <LinearLayout
+        android:id="@+id/layoutUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvUserMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_user_bg"
+            android:fontFamily="@font/nunito_regular"
+            android:lineSpacingExtra="2dp"
+            android:maxWidth="260dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvUserTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/nunito_regular"
+            android:textColor="#C4A99A"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -265,5 +265,20 @@
                 android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
-
+    <!-- Chatbot FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabChatbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="PawBot"
+        android:src="@drawable/outline_chat"
+        app:backgroundTint="#FFAA8A"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#FFFFFF" />
 </androidx.constraintlayout.widget.ConstraintLayout>

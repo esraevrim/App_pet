@@ -55,6 +55,16 @@
     <string name="retry">Wiederholen</string>
     <string name="main_menu">Hauptmenü</string>
 
+    <string name="back">Geri</string>
+    <string name="info">Bilgi</string>
+    <string name="bot_avatar">Bot Avatar</string>
+    <string name="quick_reply">Hızlı cevap</string>
+    <string name="send">Gönder</string>
+    <string name="messages_list">Mesajlar</string>
+    <string name="dinobot_name">DinoBot 🦕</string>
+    <string name="dinobot_status">● Rawr! Hazır</string>
+    <string name="dinobot_hint">DinoBot\'a sor 🦕</string>
+
     <!-- Schlaf-Ziel -->
     <string name="sleep_goal_title">Schlaf-Ziel</string>
     <string name="set_sleep_goal">Schlaf-Ziel setzen</string>
