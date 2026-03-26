@@ -14,7 +14,7 @@ Progress Tracking: Encourages consistency by showing daily and overall achieveme
 
 DinoBot AI Assistant (New!): A smart, interactive baby dinosaur chat companion that knows your daily progress and motivates you to reach your goals.
 
-#🤖 DinoBot: The AI Companion
+# 🤖 DinoBot: The AI Companion
 
 The app features DinoBot, an intelligent AI chatbot powered by the Google Gemini API (Gemini 3 Flash). DinoBot is not just a regular chatbot; it is fully integrated with the user's personal health data.
 
