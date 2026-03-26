@@ -4,22 +4,37 @@ A gamified self-care Android application that helps users build healthy daily ha
 
 # ✨ Features
 
-This app helps users build healthy daily habits in a fun and engaging way. It includes four main daily goals: water, steps, sleep, and focus. Users can set their targets, track their progress, and earn fuel whenever they complete a goal.
+This app helps users build healthy daily habits in a fun and engaging way. It includes four main daily goals: Water, Steps, Sleep, and Focus. Users can set their targets, track their progress, and earn fuel whenever they complete a goal.
 
-With the fuel they collect, users can play a space mini-game, where their virtual pet explores the galaxy, collecting stars and avoiding asteroids.
+Space Mini-Game: With the fuel they collect, users can play a mini-game where their virtual pet explores the galaxy, collecting stars and avoiding asteroids.
 
-The app is also customizable. Users can personalize their experience by changing their pet’s name and color, as well as selecting their preferred app language.
+Customization: Users can personalize their experience by changing their pet’s name, color, and preferred app language.
 
-To keep users motivated, the app provides progress tracking. By showing daily and overall achievements, it encourages consistency and makes self-care more enjoyable.
+Progress Tracking: Encourages consistency by showing daily and overall achievements.
+
+DinoBot AI Assistant (New!): A smart, interactive baby dinosaur chat companion that knows your daily progress and motivates you to reach your goals.
+
+#🤖 DinoBot: The AI Companion
+
+The app features DinoBot, an intelligent AI chatbot powered by the Google Gemini API (Gemini 3 Flash). DinoBot is not just a regular chatbot; it is fully integrated with the user's personal health data.
+
+Context-Aware: DinoBot accesses your real-time data (water intake, sleep duration, focus minutes, and steps) via SharedPreferences.
+
+Personalized Coaching: If you haven't drank enough water, DinoBot will remind you with a friendly "Rawrr!" to stay hydrated.
+
+Multi-language Support: It automatically responds in the same language you use to chat.
+
+Dynamic Character: DinoBot has a unique personality—it’s a wise, cheerful baby dinosaur that never barks but always cheers you up!
 
 # 🛠️ Tech Stack
 
-* Java (Android)
-* Android Studio
+* Language: Java (Android)
+* IDE: Android Studio
+* AI Engine: Google Gemini API (generativeai:0.9.0)
 * Uses device sensors:
 
   * Step counter for activity tracking
-  * Light & motion sensors for sleep detection
+  * Light & motion sensors for sleep detection and minigame
 
 # 🚀 How It Works
 
@@ -27,15 +42,21 @@ To keep users motivated, the app provides progress tracking. By showing daily an
 * Fuel can be used to play the space mini-game
 * If the sleep goal detects both light and motion, it marks the user as awake
 * During Focus Mode, the app prevents returning to the main screen until the timer is stopped
+* Smart Chat: The AI analyzes your goalsSummary string to provide data-driven feedback on your lifestyle.
 
 # 📥 Installation
 
 1. Clone the repo:
 
    git clone https://github.com/esraevrim/App_pet
+
+2. API Key Setup:
+
+ Obtain a Gemini API key from Google AI Studio.
+ Add your API key to PetChatActivity.java.
   
-2. Open in Android Studio
-3. Run on an emulator or physical device
+3. Open in Android Studio
+4. Run on an emulator or physical device
 
 # 👩‍💻 Authors
 
